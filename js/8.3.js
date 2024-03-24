@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let day1=prompt("Введите дату в формате гг-мм-дд")
 let day2=new Date(day1)
 day3=day2.getDay()
@@ -47,3 +48,23 @@ else if (day3=="5") return dataObj5
 else if (day3=="6") return dataObj6
 }
 console.log(IsThreeDay())
+=======
+let day1=prompt("Введите дату в формате гг-мм-дд") 
+let isDay=(day2)=>day2=new Date(day1);
+let numDay=isDay()
+function getDayOfWeek(numDay){
+dayWeek=['Воскресенье',
+'Понедельник',
+'Вторник',
+'Среда',
+'Четверг',
+'Пятница',
+'Суббота'];
+num=numDay.getDay();
+return `${dayWeek[num-1]}, ${dayWeek[num]}, ${dayWeek[num+1]}`;}
+alert (getDayOfWeek(numDay))
+
+
+
+
+>>>>>>> 12ec2e08db37f83b4579d1c491d75d4d694d941a
